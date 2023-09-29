@@ -1,24 +1,33 @@
 {
-  "name": "yb-ebc-demo-next",
+  "name": "yb-demo-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prepare": "panda codegen",
+    "dev": "next dev -p 4002",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ark-ui/react": "^0.15.0",
+    "@deck.gl/core": "^8.9.30",
+    "@deck.gl/layers": "^8.9.30",
+    "@deck.gl/react": "^8.9.30",
+    "@park-ui/presets": "^0.16.0",
+    "mapbox-gl": "^2.15.0",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "react-map-gl": "^7.1.6"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
+    "@pandacss/dev": "^0.15.3",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "typescript": "latest"
   }
 }
